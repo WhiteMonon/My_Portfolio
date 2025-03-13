@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio của Tôi</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Timeline styling */
+        .timeline {
+            position: relative;
+            padding: 0 0 0 40px;
+        }
+
+        .timeline:before {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background: var(--primary-color);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 40px;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: -40px;
+            top: 5px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--primary-color);
+            border: 4px solid #fff;
+        }
+
+        .timeline-content {
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .timeline-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .timeline-header h4 {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Kỹ năng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Dự án</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Liên hệ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Kinh nghiệm</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="overlay"></div>
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-md-12 text-center">
+                    <h1 class="display-3 fw-bold text-white" data-aos="fade-up">
+                        Xin chào, tôi là <span class="highlight">Pham Long</span>
+                    </h1>
+                    <p class="lead text-white" data-aos="fade-up" data-aos-delay="200">Full Stack Developer</p>
+                    <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+                        <a href="#projects" class="btn btn-primary btn-lg me-3">Xem Dự án</a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg">Liên hệ</a>
+                    </div>
+                    <div class="social-icons mt-4" data-aos="fade-up" data-aos-delay="600">
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="section-title" data-aos="fade-up">Giới thiệu về tôi</h2>
+                    <div class="section-divider" data-aos="fade-up" data-aos-delay="100"></div>
+                </div>
+            </div>
+            <div class="row align-items-center mt-5">
+                <div class="col-lg-5" data-aos="fade-right">
+                    <div class="about-img">
+                        <img src="img/profile.webp" alt="Ảnh hồ sơ" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+                <div class="col-lg-7 mt-4 mt-lg-0" data-aos="fade-left">
+                    <h3>Nhà phát triển Full Stack</h3>
+                    <p class="lead">Tôi là một nhà phát triển web đam mê với hơn 3 năm kinh nghiệm trong lĩnh vực xây dựng các ứng dụng web và mobile hiệu suất cao.</p>
+                    <p>Tôi chuyên về JavaScript, ReactJS, Node.js và các công nghệ web hiện đại. Tôi luôn tìm kiếm những thách thức mới để phát triển kỹ năng và tạo ra những sản phẩm có tác động tích cực.</p>
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li><strong>Tên:</strong> Pham Long </li>
+                                <li><strong>Email:</strong> phamminhlong200112@gmail.com</li>
+                                <li><strong>Tuổi:</strong> 23</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li><strong>Vị trí:</strong> Full Stack Developer</li>
+                                <li><strong>Địa điểm:</strong> Hồ Chí Minh, Việt Nam</li>
+                                <li><strong>Freelance:</strong> Có thể</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <a href="assets/resume.pdf" class="btn btn-primary" target="_blank">
+                            <i class="fas fa-download me-2"></i> Tải xuống CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kinh nghiệm làm việc Section -->
+    <section id="experience" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="section-title" data-aos="fade-up">Kinh nghiệm làm việc</h2>
+                    <div class="section-divider" data-aos="fade-up" data-aos-delay="100"></div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="timeline">
+                        <!-- Kinh nghiệm 1 -->
+                        <div class="timeline-item" data-aos="fade-up">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h4>Công ty ABC Technology</h4>
+                                    <span class="badge bg-primary">2023 - Hiện tại</span>
+                                </div>
+                                <h5>Full Stack Developer</h5>
+                                <p>Phát triển và bảo trì các ứng dụng web doanh nghiệp sử dụng ReactJS và NodeJS. Làm việc với khách hàng để hiểu rõ yêu cầu và đưa ra giải pháp tối ưu.</p>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="badge bg-secondary">ReactJS</span>
+                                    <span class="badge bg-secondary">NodeJS</span>
+                                    <span class="badge bg-secondary">MongoDB</span>
+                                    <span class="badge bg-secondary">Docker</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Kinh nghiệm 2 -->
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h4>Công ty XYZ Software</h4>
+                                    <span class="badge bg-primary">2021 - 2023</span>
+                                </div>
+                                <h5>Frontend Developer</h5>
+                                <p>Thiết kế và phát triển giao diện người dùng cho các ứng dụng web và mobile. Hợp tác chặt chẽ với đội ngũ backend để tích hợp API và đảm bảo trải nghiệm người dùng tốt nhất.</p>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="badge bg-secondary">HTML/CSS</span>
+                                    <span class="badge bg-secondary">JavaScript</span>
+                                    <span class="badge bg-secondary">ReactJS</span>
+                                    <span class="badge bg-secondary">Redux</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Kinh nghiệm 3 -->
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h4>Công ty DEF Solutions</h4>
+                                    <span class="badge bg-primary">2019 - 2021</span>
+                                </div>
+                                <h5>Junior Developer</h5>
+                                <p>Hỗ trợ phát triển và bảo trì các ứng dụng web. Tham gia vào quá trình kiểm thử và fix lỗi để đảm bảo chất lượng sản phẩm.</p>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="badge bg-secondary">HTML/CSS</span>
+                                    <span class="badge bg-secondary">JavaScript</span>
+                                    <span class="badge bg-secondary">PHP</span>
+                                    <span class="badge bg-secondary">MySQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="section-title" data-aos="fade-up">Kỹ năng</h2>
+                    <div class="section-divider" data-aos="fade-up" data-aos-delay="100"></div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-6" data-aos="fade-right">
+                    <h4 class="mb-4">Kỹ năng chuyên môn</h4>
+                    <!-- Frontend Skills -->
+                    <div class="skill-category mb-4">
+                        <h5 class="mb-3"><i class="fas fa-laptop-code me-2"></i>Frontend</h5>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge bg-primary">ReactJS (Hook, Zustand)</span>
+                            <span class="badge bg-primary">TailwindCSS</span>
+                            <span class="badge bg-primary">Bootstrap</span>
+                            <span class="badge bg-primary">Axios</span>
+                            <span class="badge bg-primary">Material UI</span>
+                            <span class="badge bg-primary">HTML</span>
+                            <span class="badge bg-primary">CSS</span>
+                            <span class="badge bg-primary">JavaScript</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Backend Skills -->
+                    <div class="skill-category">
+                        <h5 class="mb-3"><i class="fas fa-server me-2"></i>Backend</h5>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge bg-success">Python</span>
+                            <span class="badge bg-success">C#</span>
+                            <span class="badge bg-success">PHP</span>
+                            <span class="badge bg-success">Java</span>
+                            <span class="badge bg-success">JavaScript</span>
+                            <span class="badge bg-success">C</span>
+                            <span class="badge bg-success">C++</span>
+                            <span class="badge bg-success">NodeJS</span>
+                            <span class="badge bg-success">Flutter</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-4 mt-md-0" data-aos="fade-left">
+                    <h4 class="mb-4">Kỹ năng khác</h4>
+                    <div class="row">
+                        <div class="col-6 mb-4">
+                            <div class="skill-bubble">
+                                <i class="fab fa-git-alt"></i>
+                                <h6>Source Control</h6>
+                            </div>
+                        </div>
+                        <div class="col-6 mb-4">
+                            <div class="skill-bubble">
+                                <i class="fas fa-sync-alt"></i>
+                                <h6>CI/CD Pipeline</h6>
+                            </div>
+                        </div>
+                        <div class="col-6 mb-4">
+                            <div class="skill-bubble">
+                                <i class="fab fa-docker"></i>
+                                <h6>Docker & Kubernetes</h6>
+                            </div>
+                        </div>
+                        <div class="col-6 mb-4">
+                            <div class="skill-bubble">
+                                <i class="fas fa-cloud"></i>
+                                <h6>Cloud Services</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="section-title" data-aos="fade-up">Dự án của tôi</h2>
+                    <div class="section-divider" data-aos="fade-up" data-aos-delay="100"></div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-md-4 mb-4" data-aos="fade-up">
+                    <div class="project-card card h-100">
+                        <img src="img/project.jpg" class="card-img-top" alt="Dự án 1">
+                        <div class="card-body">
+                            <h5 class="card-title">E-Commerce Platform</h5>
+                            <p class="card-text">Nền tảng thương mại điện tử được xây dựng với ReactJS, Node.js và MongoDB.</p>
+                            <div class="tech-stack">
+                                <span class="badge bg-primary">React</span>
+                                <span class="badge bg-success">Node.js</span>
+                                <span class="badge bg-info">MongoDB</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary me-2">Demo</a>
+                            <a href="#" class="btn btn-outline-secondary">Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card card h-100">
+                        <img src="img/project.jpg" class="card-img-top" alt="Dự án 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Task Manager App</h5>
+                            <p class="card-text">Ứng dụng quản lý công việc với chức năng drag-and-drop và thông báo real-time.</p>
+                            <div class="tech-stack">
+                                <span class="badge bg-primary">React</span>
+                                <span class="badge bg-danger">Firebase</span>
+                                <span class="badge bg-warning">Redux</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary me-2">Demo</a>
+                            <a href="#" class="btn btn-outline-secondary">Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card card h-100">
+                        <img src="img/project.jpg" class="card-img-top" alt="Dự án 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Social Media Dashboard</h5>
+                            <p class="card-text">Bảng điều khiển quản lý mạng xã hội với phân tích dữ liệu và biểu đồ.</p>
+                            <div class="tech-stack">
+                                <span class="badge bg-primary">Vue.js</span>
+                                <span class="badge bg-success">Express</span>
+                                <span class="badge bg-secondary">D3.js</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary me-2">Demo</a>
+                            <a href="#" class="btn btn-outline-secondary">Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="section-title" data-aos="fade-up">Liên hệ với tôi</h2>
+                    <div class="section-divider" data-aos="fade-up" data-aos-delay="100"></div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-lg-5" data-aos="fade-right">
+                    <div class="contact-info">
+                        <h4 class="mb-4">Thông tin liên hệ</h4>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h6>Địa chỉ</h6>
+                                <p>Thành phố Hồ Chí Minh, Việt Nam</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h6>Email</h6>
+                                <p><a href="mailto:example@example.com">phanminglong200112@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h6>Điện thoại</h6>
+                                <p><a href="tel:+84123456789">+84 365 530 447</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-icons mt-4">
+                            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-7 mt-4 mt-lg-0" data-aos="fade-left">
+                    <form id="contact-form" class="contact-form">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control" placeholder="Họ và tên" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="email" class="form-control" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Tiêu đề">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Nội dung tin nhắn" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Gửi tin nhắn</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 Portfolio của Pham Long</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
