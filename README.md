@@ -23,7 +23,7 @@
 
 1. Clone repository này:
 ```
-git clone https://github.com/WhiteMonon/My_CV.git](https://github.com/WhiteMonon/My_Portfolio.git
+git clone https://github.com/WhiteMonon/My_Portfolio.git
 ```
 
 2. Mở file `index.html` trong trình duyệt để xem trang web
