@@ -1,16 +1,16 @@
 # Portfolio Website
 
-Đây là mã nguồn cho website portfolio cá nhân được xây dựng với HTML, CSS và JavaScript.
+This is the source code for a personal portfolio website built with HTML, CSS, and JavaScript.
 
-## Tính năng
+## Features
 
-- Thiết kế responsive, tương thích với nhiều thiết bị
-- Hiệu ứng hiển thị khi cuộn trang (scroll animations)
-- Các phần: Giới thiệu, Kỹ năng, Dự án, Kinh nghiệm và Liên hệ
-- Form liên hệ tương tác
-- Hiệu ứng parallax và typing
+- Responsive design, compatible with various devices
+- Scroll animations
+- Sections: Introduction, Skills, Projects, Experience, and Contact
+- Interactive contact form
+- Parallax and typing effects
 
-## Công nghệ sử dụng
+## Technologies Used
 
 - HTML5
 - CSS3
@@ -19,22 +19,26 @@
 - Font Awesome
 - AOS Animation Library
 
-## Hướng dẫn cài đặt
+## Demo
 
-1. Clone repository này:
+Check out the live demo: [My Portfolio](https://whitemonon.github.io/My_Portfolio/)
+
+## Installation Guide
+
+1. Clone this repository:
 ```
 git clone https://github.com/WhiteMonon/My_Portfolio.git
 ```
 
-2. Mở file `index.html` trong trình duyệt để xem trang web
+2. Open the `index.html` file in your browser to view the website
 
-## Tùy chỉnh
+## Customization
 
-- Chỉnh sửa thông tin cá nhân trong file `index.html`
-- Thay đổi các hình ảnh trong thư mục `img/`
-- Cập nhật CV trong thư mục `assets/`
-- Tùy chỉnh các màu sắc chủ đạo trong file `css/style.css`
+- Edit personal information in the `index.html` file
+- Change images in the `img/` folder
+- Update your CV in the `assets/` folder
+- Customize main colors in the `css/style.css` file
 
-## Tác giả
+## Author
 
 - **Pham Long** - [GitHub](https://github.com/WhiteMonOn)
